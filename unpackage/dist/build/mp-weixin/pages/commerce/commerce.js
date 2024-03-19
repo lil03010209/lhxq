@@ -1,0 +1,1 @@
+"use strict";const o=require("../../common/vendor.js"),e={__name:"commerce",setup:e=>(o.onLoad((()=>{console.log("商务--页面加载")})),o.onShow((()=>{console.log("商务--页面显示")})),o.onReady((()=>{console.log("商务---页面渲染完成")})),o.onUnload((()=>{console.log("商务--页面被卸载")})),(o,e)=>({}))};wx.createPage(e);

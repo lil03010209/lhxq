@@ -23,23 +23,122 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.swiper.data-v-1cf27b2a {
-  height: 400rpx;
-  width: 750rpx;
+.icons.data-v-1cf27b2a {
+  padding: 15rpx 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
-.swiper .img.data-v-1cf27b2a {
-  width: 100%;
-  height: 100%;
+.icons-list.data-v-1cf27b2a {
+  flex: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icons-list image.data-v-1cf27b2a {
+  width: 85rpx;
+  height: 85rpx;
+}
+.icons-list text.data-v-1cf27b2a {
+  font-size: 24rpx;
+  font-weight: 700;
+}
+.icons.data-v-1cf27b2a {
+  display: flex;
+  justify-content: space-around;
+  background-image: linear-gradient(#e6f2ff, white);
+  padding: 20px 0;
+}
+.header-component.data-v-1cf27b2a {
+  background-color: skyblue;
+  padding: 5px;
+  text-align: center;
+  background-image: linear-gradient(skyblue, #e6f2ff);
+  /* 从skyblue到透明的渐变 */
 }
 .box.data-v-1cf27b2a {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 .box .input.data-v-1cf27b2a {
-  height: 100rpx;
-  width: 500rpx;
-  border: 2px solid blue;
+  height: 40px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 0 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+  background-color: white;
+}
+@media (max-width: 320px) {
+.box.data-v-1cf27b2a {
+    /* 针对小屏幕尺寸调整 */
 }
 .box .button.data-v-1cf27b2a {
-  height: 100rpx;
-  width: 250rpx;
+    font-size: 12px;
+    /* 减小字体大小 */
+    padding: 5px 10px;
+    /* 减小内边距 */
+}
+}
+.box .button.data-v-1cf27b2a {
+  height: 44px;
+  width: 150px;
+  border: none;
+  border-radius: 22px;
+  background-color: royalblue;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  /* 使用Flexbox布局 */
+  justify-content: center;
+  /* 水平居中 */
+  align-items: center;
+  /* 垂直居中 */
+  padding: 5px 10px;
+  /* 根据需要调整内边距 */
+}
+.swiper.data-v-1cf27b2a {
+  height: 250px;
+  width: 95%;
+  margin: 0 auto;
+}
+.swiper .img.data-v-1cf27b2a {
+  border-radius: 30px;
+}
+.fortune-boxes.data-v-1cf27b2a {
+  padding: 20px;
+  background-color: white;
+  /* 轻微灰色背景 */
+}
+.fortune.data-v-1cf27b2a {
+  background-image: linear-gradient(to right, #ccd5ff, white);
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* 设置初始阴影较轻 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.fortune-title.data-v-1cf27b2a {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+  /* 标题颜色 */
+}
+.fortune-desc.data-v-1cf27b2a {
+  font-size: 16px;
+  color: #666;
+  /* 描述文字颜色 */
+}
+.uni-rate.data-v-1cf27b2a {
+  margin: 10px 0;
+  /* 星级评分的上下外边距 */
 }

@@ -1,0 +1,7 @@
+{
+  "name": "get_numbers",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

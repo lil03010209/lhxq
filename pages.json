@@ -3,11 +3,27 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "靓号选取"
+				"navigationBarTitleText": "靓号选取平台"
 			}
 		},
 		{
 			"path" : "pages/user/user",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/commerce/commerce",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/diy/diy",
 			"style" : 
 			{
 				"navigationBarTitleText" : "",
@@ -32,11 +48,23 @@
 			"iconPath": "static/icon/index.png",
 			"selectedIconPath": "static/icon/index1.png",
 			"text": "新势力"
-		}, {
+		},{
+			"pagePath": "pages/commerce/commerce",
+			"iconPath": "static/icon/commerce.png",
+			"selectedIconPath": "static/icon/commerce1.png",
+			"text": "商务"
+		},
+		{
 			"pagePath": "pages/user/user",
 			"iconPath": "static/icon/user.png",
 			"selectedIconPath": "static/icon/user1.png",
-			"text": "我的"
+			"text": "运势"
+		},
+		{
+			"pagePath": "pages/diy/diy",
+			"iconPath": "static/icon/diy.png",
+			"selectedIconPath": "static/icon/diy1.png",
+			"text": "自定义"
 		}]
 	}
 
