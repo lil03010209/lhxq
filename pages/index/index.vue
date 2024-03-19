@@ -27,7 +27,7 @@
 
 	<view class="icons">
 	
-		<view class="icons-list" @click="navigate('tutor-list')">
+		<view class="icons-list" @click="postSearchCourse('caiyun')">
 			<image src="/static/syicon/caifu.png" mode="aspectFit"></image>
 			<text>财运</text>
 		</view>
@@ -39,7 +39,7 @@
 			<image src="/static/syicon/taohua.png" mode="aspectFit"></image>
 			<text>桃花运</text>
 		</view>
-		<view class="icons-list" @click="navigate('sign-in')">
+		<view class="icons-list" @click="postSearchCourse('sign-in')">
 			<image src="/static/syicon/tuanyuan.png" mode="aspectFit"></image>
 			<text>团圆号</text>
 		</view>
@@ -76,6 +76,20 @@
 	import {
 		ref
 	} from 'vue'
+	
+	
+	const postSearchCourse = (val)=>{
+		if(val=="caiyun"){
+			uni.setStorageSync("class1","财运")
+		}
+		if(val=="hot"){
+			uni.setStorageSync("class1","吉祥号")
+		}
+		
+		uni.switchTab({
+			url: '/pages/user/user'
+		});
+	}
 	
 	// const list = ref()
 	// onLoad(async ()=>{

@@ -15,6 +15,17 @@ if (!Math) {
 const _sfc_main = {
   __name: "index",
   setup(__props) {
+    const postSearchCourse = (val) => {
+      if (val == "caiyun") {
+        common_vendor.index.setStorageSync("class1", "财运");
+      }
+      if (val == "hot") {
+        common_vendor.index.setStorageSync("class1", "吉祥号");
+      }
+      common_vendor.index.switchTab({
+        url: "/pages/user/user"
+      });
+    };
     const indicatorDots = common_vendor.ref(true);
     common_vendor.ref(0);
     const showFortunes = common_vendor.ref(true);
@@ -138,10 +149,10 @@ const _sfc_main = {
         g: common_vendor.o((...args) => _ctx.tiaozhuan && _ctx.tiaozhuan(...args)),
         h: common_vendor.o((...args) => _ctx.finish && _ctx.finish(...args)),
         i: common_vendor.o((...args) => _ctx.trans && _ctx.trans(...args)),
-        j: common_vendor.o(($event) => _ctx.navigate("tutor-list")),
-        k: common_vendor.o(($event) => _ctx.postSearchCourse("hot")),
-        l: common_vendor.o(($event) => _ctx.postSearchCourse("new")),
-        m: common_vendor.o(($event) => _ctx.navigate("sign-in")),
+        j: common_vendor.o(($event) => postSearchCourse("caiyun")),
+        k: common_vendor.o(($event) => postSearchCourse("hot")),
+        l: common_vendor.o(($event) => postSearchCourse("new")),
+        m: common_vendor.o(($event) => postSearchCourse("sign-in")),
         n: showFortunes.value
       }, showFortunes.value ? {
         o: common_vendor.f(fortunes.value, (fortune, k0, i0) => {

@@ -1,8 +1,10 @@
 <template>
 	<view>商务</view>
+	<uni-data-select collection="class_list2" field="text as value, text as text" label="选择" v-model="name"
+		:clear="false" @change="hChange" />
 	<view v-for="(item,index) in list" :key="index">
 		{{item.acc_num}}
-		{{item.classify_1}}
+		{{item.classify_2}}
 	</view>
 </template>
 
@@ -12,21 +14,23 @@
 		ref
 	} from 'vue'
 	
+	
+	// 获取数据列表
 	const list = ref()
-	onLoad(async ()=>{
+	const getDataList = async  ()=>{
 		const helloco = await uniCloud.callFunction({
-			name:"get_numbers",
-			data: { a: 1 },
+			name:"get_commerce",
+			data: { aaaa: name.value },
 		})
 		list.value = helloco.result.data
-		
-		// try {
-		// 					const res = await helloco.sum(1,2) //导入云对象后就可以直接调用该对象的sum方法了，注意使用异步await
-		// 					console.log(res) // 结果是3
-		// 				} catch (e) {
-		// 					console.log(e)
-		// 				}
-	})
+	}
+	
+	// 下拉框变化触发事件
+	const name = ref("")
+	const hChange = ()=>{
+		getDataList()
+	}
+	
 	// 箭头函数
 	onLoad(()=>{
 		console.log("商务--页面加载")

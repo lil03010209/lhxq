@@ -1,1 +1,1 @@
-<view>运势</view><uni-data-select wx:if="{{c}}" bindchange="{{a}}" u-i="6bb98f8f-0" bind:__l="__l" bindupdateModelValue="{{b}}" u-p="{{c}}"/><view wx:for="{{d}}" wx:for-item="item" wx:key="c">{{item.a}} {{item.b}}</view>
+<view>运势</view> {{a}} <uni-data-select wx:if="{{d}}" bindchange="{{b}}" u-i="6bb98f8f-0" bind:__l="__l" bindupdateModelValue="{{c}}" u-p="{{d}}"/><view wx:for="{{e}}" wx:for-item="item" wx:key="c">{{item.a}} {{item.b}}</view>

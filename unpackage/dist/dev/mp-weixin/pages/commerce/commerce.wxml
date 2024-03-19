@@ -1,1 +1,1 @@
-<view>商务</view><view wx:for="{{a}}" wx:for-item="item" wx:key="c">{{item.a}} {{item.b}}</view>
+<view>商务</view><uni-data-select wx:if="{{c}}" bindchange="{{a}}" u-i="50d6d0e2-0" bind:__l="__l" bindupdateModelValue="{{b}}" u-p="{{c}}"/><view wx:for="{{d}}" wx:for-item="item" wx:key="c">{{item.a}} {{item.b}}</view>

@@ -1,13 +1,10 @@
 <template>
 	<view>运势</view>
-	 <uni-data-select
-	      collection="class_list"
-	      field="text as value, text as text"
-	      label="选择"
-	      v-model="name"
-	      :clear="false"
-		  @change="hChange"
-	    />
+{{name}}
+	
+	
+	<uni-data-select collection="class_list" field="text as value, text as text" label="选择" v-model="name"
+		:clear="false" @change="hChange" />
 	<view v-for="(item,index) in list" :key="index">
 		{{item.acc_num}}
 		{{item.classify_2}}
@@ -15,47 +12,65 @@
 </template>
 
 <script setup>
-	import { onLoad,onShow,onReady,onHide,onUnload } from '@dcloudio/uni-app';
+	import {
+		onLoad,
+		onShow,
+		onReady,
+		onHide,
+		onUnload
+	} from '@dcloudio/uni-app';
 	import {
 		ref
 	} from 'vue'
-	
-	
-	
-	
+	const bb = ref("")
+    const  rlist = ref([
+        { value: "0", text: "篮球" },
+        { value: 1, text: "足球" },
+        { value: 2, text: "游泳" },
+      ])
+
+
 	// 获取数据列表
 	const list = ref()
-	const getDataList = async  ()=>{
+	const getDataList = async () => {
 		const helloco = await uniCloud.callFunction({
-			name:"get_numbers",
-			data: { aaaa: name.value },
+			name: "get_numbers",
+			data: {
+				aaaa: name.value
+			},
 		})
 		list.value = helloco.result.data
 	}
-	
+
 	// 下拉框变化触发事件
 	const name = ref("")
-	const hChange = ()=>{
+	const hChange = () => {
 		getDataList()
 	}
-	
-	
-	
+
+
+
 	// 箭头函数
-	onLoad(()=>{
+	onLoad(() => {
+		
 		console.log("我的--页面加载")
 	})
-	onShow(()=>{
+	onShow(() => {
+		const class1 = uni.getStorageSync('class1');
+		if(class1){
+			name.value = class1
+		}
+		uni.removeStorageSync('class1');
 		console.log("我的--页面显示")
 	})
-	onReady(()=>{
+	onReady(() => {
 		console.log("我的---页面渲染完成")
 	})
-	onUnload(()=>{
+	onUnload(() => {
 		console.log("我的--页面被卸载")
 	})
 </script>
 
 <style lang="scss" scoped>
-	
+
 </style>
