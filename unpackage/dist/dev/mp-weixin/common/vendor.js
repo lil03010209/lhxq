@@ -7220,7 +7220,7 @@ class v {
 function I(e2) {
   return e2 && "string" == typeof e2 ? JSON.parse(e2) : e2;
 }
-const S = true, b = "mp-weixin", A = I([]), P = b, T = I('{\n    "address": [\n        "127.0.0.1",\n        "192.168.1.7"\n    ],\n    "debugPort": 9001,\n    "initialLaunchType": "remote",\n    "servePort": 7001,\n    "skipFiles": [\n        "<node_internals>/**",\n        "C:/Users/cld2000/Desktop/HBuilderX/plugins/unicloud/**/*.js"\n    ]\n}\n'), C = I('[{"provider":"aliyun","spaceName":"lianghaochoose","spaceId":"mp-b85cac42-db73-45e0-8a58-4b70b36c42c6","clientSecret":"5OfwY/+sm6oxP3ZJGxvGJQ=="}]') || [];
+const S = true, b = "mp-weixin", A = I([]), P = b, T = I('{\n    "address": [\n        "127.0.0.1",\n        "192.168.1.7"\n    ],\n    "debugPort": 9000,\n    "initialLaunchType": "local",\n    "servePort": 7000,\n    "skipFiles": [\n        "<node_internals>/**",\n        "C:/Users/cld2000/Desktop/HBuilderX/plugins/unicloud/**/*.js"\n    ]\n}\n'), C = I('[{"provider":"aliyun","spaceName":"lianghaochoose","spaceId":"mp-b85cac42-db73-45e0-8a58-4b70b36c42c6","clientSecret":"5OfwY/+sm6oxP3ZJGxvGJQ=="}]') || [];
 let O = "";
 try {
   O = "__UNI__A1A990E";

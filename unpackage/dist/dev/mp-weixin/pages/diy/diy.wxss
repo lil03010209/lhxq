@@ -66,13 +66,13 @@
 .button.data-v-38e3f21d {
     font-size: 12px;
     /* 减小字体大小 */
-    padding: 5px 10px;
+    padding: 3px 5px;
     /* 减小内边距 */
 }
 }
 .button.data-v-38e3f21d {
-  height: 44px;
-  width: 100px;
+  height: 22px;
+  width: 66px;
   border: none;
   border-radius: 22px;
   background-color: royalblue;
@@ -88,4 +88,46 @@
   /* 垂直居中 */
   padding: 5px 10px;
   /* 根据需要调整内边距 */
+}
+.number-display-container .table.data-v-38e3f21d {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.number-display-container .table .table-header.data-v-38e3f21d {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  display: flex;
+  padding: 16px 10px;
+}
+.number-display-container .table .header-item.data-v-38e3f21d,
+.number-display-container .table .detail-item.data-v-38e3f21d {
+  flex-grow: 1;
+  text-align: center;
+  padding: 12px 0;
+}
+.number-display-container .table .acc-num-header.data-v-38e3f21d,
+.number-display-container .table .acc-num.data-v-38e3f21d {
+  flex-basis: 40%;
+}
+.number-display-container .table .select-box.data-v-38e3f21d {
+  flex-basis: 10%;
+  background-color: #ff4081;
+  color: white;
+  border-radius: 22px;
+  padding: 6px 12px;
+  transition: transform 0.2s ease-in-out;
+}
+.number-display-container .table .select-box.data-v-38e3f21d:hover {
+  transform: translateY(-2px);
+  background-color: #f50057;
+}
+.number-display-container .table .list-container .number-row.data-v-38e3f21d {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.3s;
+}
+.number-display-container .table .list-container .number-row.data-v-38e3f21d:hover {
+  background-color: #f9f9f9;
 }

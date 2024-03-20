@@ -18,8 +18,10 @@ const _sfc_main = {
     const list = common_vendor.ref();
     common_vendor.onLoad(async () => {
       const helloco = await common_vendor.Ws.callFunction({
-        name: "get_numbers",
-        data: { a: 3 }
+        name: "get_commerce",
+        data: {
+          a: 3
+        }
       });
       list.value = helloco.result.data;
     });
@@ -39,8 +41,10 @@ const _sfc_main = {
         d: common_vendor.f(list.value, (item, index, i0) => {
           return {
             a: common_vendor.t(item.acc_num),
-            b: common_vendor.t(item.classify_1),
-            c: index
+            b: common_vendor.t(item.classify_2),
+            c: common_vendor.t(item.baodi),
+            d: common_vendor.t(item.saving),
+            e: index
           };
         })
       };

@@ -1,0 +1,124 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.number-display-container .header.data-v-0f7520f0 {
+  background-image: url("https://mp-b85cac42-db73-45e0-8a58-4b70b36c42c6.cdn.bspapp.com/user.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80px;
+}
+.number-display-container .select-container.data-v-0f7520f0 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #f8f8f8;
+}
+.number-display-container .select-container .select-label.data-v-0f7520f0 {
+  flex: 1;
+  margin-right: 20px;
+  font-size: 16px;
+  color: #666;
+}
+.number-display-container .select-container uni-data-select.data-v-0f7520f0 {
+  flex: 3;
+}
+.number-display-container .select-container uni-data-select select.data-v-0f7520f0 {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+}
+@media (max-width: 600px) {
+.number-display-container .select-container.data-v-0f7520f0 {
+    flex-direction: column;
+    align-items: stretch;
+}
+.number-display-container .select-container .select-label.data-v-0f7520f0 {
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+.number-display-container .select-container uni-data-select.data-v-0f7520f0 {
+    flex: none;
+}
+}
+.number-display-container .table.data-v-0f7520f0 {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.number-display-container .table .table-header.data-v-0f7520f0 {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  display: flex;
+  padding: 16px 10px;
+}
+.number-display-container .table .header-item.data-v-0f7520f0,
+.number-display-container .table .detail-item.data-v-0f7520f0 {
+  flex-grow: 1;
+  text-align: center;
+  padding: 12px 0;
+}
+.number-display-container .table .acc-num-header.data-v-0f7520f0,
+.number-display-container .table .acc-num.data-v-0f7520f0 {
+  flex-basis: 40%;
+}
+.number-display-container .table .select-box.data-v-0f7520f0 {
+  flex-basis: 10%;
+  background-color: #ff4081;
+  color: white;
+  border-radius: 22px;
+  padding: 6px 12px;
+  transition: transform 0.2s ease-in-out;
+}
+.number-display-container .table .select-box.data-v-0f7520f0:hover {
+  transform: translateY(-2px);
+  background-color: #f50057;
+}
+.number-display-container .table .list-container .number-row.data-v-0f7520f0 {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.3s;
+}
+.number-display-container .table .list-container .number-row.data-v-0f7520f0:hover {
+  background-color: #f9f9f9;
+}
